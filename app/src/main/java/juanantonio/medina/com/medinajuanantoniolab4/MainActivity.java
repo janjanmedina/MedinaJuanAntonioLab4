@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d("lab4", "onRestart started..");
+    protected void onPause() {
+        super.onPause();
+        Log.d("lab4", "onPause started..");
     }
 
     @Override
@@ -56,8 +56,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d("lab4", "onPause started..");
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("lab4", "onRestart started..");
     }
+
 }
